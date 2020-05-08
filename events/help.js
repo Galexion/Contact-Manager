@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const commando = require("discord.js-commando")
 const embed = {
   "color": 16777215,
   "footer": {
