@@ -25,7 +25,7 @@ client.on("message", message => {
         return message.channel.send({ embed: help.embed }).catch(console.error);
     }
     if (command === "tailserayt") {
-        return message.channel.send({ embed: TailsEraYT.embed }).catch(console.error);
+        return message.channel.send({ embed: contacts.TailsEraYT.embed }).catch(console.error);
     }
     
 
