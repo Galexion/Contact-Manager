@@ -24,11 +24,7 @@ client.on("message", message => {
     if (command === "help") {
         return message.channel.send({ embed: help.embed }).catch(console.error);
     }
-    if (command === "contact") {
-        if (args[0] === "tailserayt")
-            return message.channel.send({ embed: TailsEraYT.embed }).catch(console.error);
-        return message.channel.send(">Usage:/n>!contact <user>");
-    }
+    
 
     //Commands Code
     if (command === "website") {
@@ -38,11 +34,11 @@ client.on("message", message => {
         return message.channel.send("Check your DM's.");
     }
 
-    if (command === "server") {
-        const server = servers[args.join(" ").toLowerCase()];
-        if (!server) {
+    if (command === "contact") {
+        const contacts = contacts[args.join(" ").toLowerCase()];
+        if (!contact) {
             message.delete().catch(console.error);
-            return message.channel.send("> Usage: \n> !server <region / Server name>");
+            return message.channel.send("> Usage: \n> !contact <user>");
         }
 
         return message.channel.send({ embed: server.embed });
