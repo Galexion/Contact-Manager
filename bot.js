@@ -3,7 +3,6 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 //events
 const help = require("./events/help");
-const helpserver = require("./events/helpserver");
 const contacts = {
     TailsEraYT: require("./events/Contacts/TailsEraYT"),
 };
@@ -23,8 +22,6 @@ client.on("message", message => {
     const command = args.shift().toLowerCase();
 
     if (command === "help") {
-        if (args[0] === "server")
-            return message.channel.send({ embed: helpserver.embed }).catch(console.error);
         return message.channel.send({ embed: help.embed }).catch(console.error);
     }
     if (command === "contact") {
