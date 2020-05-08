@@ -8,6 +8,7 @@ const contacts = {
 };
 const Invite = require("./events/invite");
 const prefix = "!";
+const Add = require("./events/addcontact")
 
 client.on("ready", () => {
     console.log("Escargot Manager Has Been Launched.");

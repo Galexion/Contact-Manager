@@ -7,12 +7,16 @@ const embed = {
   },
   "fields": [
     {
-      "name": "Help Menu",
+      "name": "About",
       "value": "========"
     },
     {
-      "name": "Working!!!",
-      "value": "Our Technitions are working out the Kinks. Menwhile you can go to (registered site here) to learn about the commands that we offer."
+      "name": "Current Version",
+      "value": "Escagot Manager Version EML Beta 1"
+    },
+    {
+        "name": "Credits",
+        "value": "The Escagot Manager Project was Made by: TailsEraYT, Walkingphasers"
     }
   ]
 };
