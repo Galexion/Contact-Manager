@@ -4,14 +4,8 @@ const client = new Discord.Client();
 //events
 const help = require("./events/help");
 const helpserver = require("./events/helpserver");
-const servers = {
-    mc: require("./events/minecraft/Server1"),
-    //Satellaview
-    us: require("./events/satellaview/serverUS"),
-    eu: require("./events/satellaview/serverEU"),
-    global: require("./events/satellaview/serverGL"),
-    satellaplay: require("./events/satellaview/satellaplay/Satellaplay"),
-    satellaplay2: require("./events/satellaview/satellaplay/Satellaplay1")
+const contacts = {
+    TailsEraYT: require("./events/Contacts/TailsEraYT"),
 };
 const Invite = require("./events/invite");
 const prefix = "!";
@@ -32,6 +26,11 @@ client.on("message", message => {
         if (args[0] === "server")
             return message.channel.send({ embed: helpserver.embed }).catch(console.error);
         return message.channel.send({ embed: help.embed }).catch(console.error);
+    }
+    if (command === "contact") {
+        if (args[0] === "tailserayt")
+            return message.channel.send({ embed: TailsEraYT.embed }).catch(console.error);
+        return message.channel.send(">Usage:/n>!contact <user>");
     }
 
     //Commands Code
