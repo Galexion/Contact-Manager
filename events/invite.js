@@ -11,8 +11,8 @@ const embed = {
       "value":"======"
     },
     {
-      "name": "Invite Me to your Server!",
-      "value": "https://discordapp.com/api/oauth2/authorize?client_id=616833276660678658&permissions=51200&scope=bot"
+      "name": "Inviting has been disabled.",
+      "value": "To Learn More, Visit (Register Link) for more info."
     }
   ]
 };
