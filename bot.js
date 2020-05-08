@@ -41,10 +41,10 @@ client.on("message", message => {
         const contact = contacts[args.join(" ").toLowerCase()];
         if (!contact) {
             message.delete().catch(console.error);
-            return message.channel.send( embed: contacts.embed);
+            return message.channel.send({embed: contacts.embed});
         }
 
-        return message.channel.send({ embed: server.embed });
+        return message.channel.send(">usage: /n> !contact <user>");
     }
 
     if (command === "invite") {
