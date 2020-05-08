@@ -3,7 +3,7 @@ const embed = {
   "color": 16777215,
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/617442660038344803/617560922814414848/Webp.net-resizeimage.jpg",
-    "text": "Collab with EraMedia || Escorgot Manager"
+    "text": "In Partnership with EraMedia || Escorgot Manager"
   },
   "fields": [
     {

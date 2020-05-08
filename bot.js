@@ -10,7 +10,7 @@ const Invite = require("./events/invite");
 const prefix = "!";
 
 client.on("ready", () => {
-    console.log("BS-X Computer Has Been Launched.");
+    console.log("Escargot Manager Has Been Launched.");
     client.user.setActivity("on Servers! || !help");
 })
 
@@ -32,16 +32,16 @@ client.on("message", message => {
     //Commands Code
     if (command === "website") {
         message.author
-            .send("> The EraMedia Website \n Go to https://EraMedia.ml to see our website!")
+            .send("> Can't Wait to Message to your friends? Download Escargot @ https://escargot.log1p.xyz !")
             .catch(() => {});
         return message.channel.send("Check your DM's.");
     }
 
     if (command === "contact") {
-        const contacts = contacts[args.join(" ").toLowerCase()];
+        const contact = contacts[args.join(" ").toLowerCase()];
         if (!contact) {
             message.delete().catch(console.error);
-            return message.channel.send("> Usage: \n> !contact <user>");
+            return message.channel.send( embed: contacts.embed);
         }
 
         return message.channel.send({ embed: server.embed });
