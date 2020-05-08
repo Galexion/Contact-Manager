@@ -11,7 +11,7 @@ const prefix = "!";
 
 client.on("ready", () => {
     console.log("Escargot Manager Has Been Launched.");
-    client.user.setActivity("on Servers! || !help");
+    client.user.setActivity("Beta Mode || !help");
 })
 
 // Help code
