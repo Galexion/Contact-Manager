@@ -3,20 +3,20 @@ const embed = {
   "color": 16777215,
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/617442660038344803/617560922814414848/Webp.net-resizeimage.jpg",
-    "text": "In Partnership With EraMedia || Escargot Manager"
+    "text": "In Partnership with EraMedia || Escorgot Manager"
   },
   "fields": [
     {
-      "name": "About",
+      "name": "Contact Infomation for Naidru",
       "value": "========"
     },
     {
-      "name": "Current Version",
-      "value": "Escagot Manager Live Beta 3"
+      "name": "Email",
+      "value": "joeypatten8@gmail.com"
     },
     {
-        "name": "Credits",
-        "value": "The Escagot Manager Project was Made by: TailsEraYT, Walkingphasers"
+      "name": "Other Contact Places",
+      "value": " Discord: Naidru#3580 /n Custom Steam ID: Naidru /n Twitter: @EpicSkullYT"
     }
   ]
 };
