@@ -11,8 +11,28 @@ const embed = {
       "value": "========"
     },
     {
-      "name": "Working!!!",
-      "value": "Our Technitions are working out the Kinks. Menwhile you can go to (registered site here) to learn about the commands that we offer."
+      "name": "Work IN Progress",
+      "value": "This is still a work in Progress. Thank you for your cooperation."
+    },
+    {
+      "name": "!help",
+      "value": "Shows this Help Menu."
+    },
+    {
+      "name": "!contact",
+      "value": "This Command is currently not in use due to instability issues. Rest assured that our team is working 24/7 to bring this command back online. in the meanwile, you can type in the name of the person that you are looking for."
+    },
+    {
+      "name": "!add",
+      "value": "sends the information you need to add your Email and Description to this bot.",
+    },
+    {
+      "name": "!website",
+      "value": "Sends you the website to Escargot and the soon to be Escargot Manager Website.",
+    },
+    {
+      "name": "!invite",
+      "value": "Sends you an invite Link so you can Invite the bot to your server. (Not Enabled at this time.)"
     }
   ]
 };

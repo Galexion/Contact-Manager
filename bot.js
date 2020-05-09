@@ -46,9 +46,14 @@ client.on("message", message => {
         message.delete().catch(console.error);
         return message.author.send({ embed: about.embed }).catch(() => {});
     }
+    if (command === "add"){
+        message.delete().catch(console.error);
+        return message.channel.send({ embed: add.embed });
+    }
 
     if (command === "contact") {
         const contact = contacts[args.join(" ").toLowerCase()];
+
         if (command === "contact add"){
             return message.channel.send({ embed: add.embed });
         };
@@ -58,7 +63,7 @@ client.on("message", message => {
         };
 
             message.delete().catch(console.error);
-            return message.channel.send("> We are currently experincing issues with this command. For Now it has been disabled. Thanks for using the Escargot Manager Public Beta.");
+            return message.channel.send("> We are currently experincing issues with this command. For now you can Access your and other Stats without 'contact' in the name.");
     };
 
 
