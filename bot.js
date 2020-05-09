@@ -8,7 +8,8 @@ const contacts = {
 };
 const Invite = require("./events/invite");
 const prefix = "!";
-const Add = require("./events/addcontact")
+const Add = require("./events/addcontact");
+const about = about()
 
 client.on("ready", () => {
     console.log("Escargot Manager Has Been Launched.");
@@ -32,9 +33,7 @@ client.on("message", message => {
 
     //Commands Code
     if (command === "website") {
-        message.author
-            .send("> Can't Wait to Message to your friends? Download Escargot @ https://escargot.log1p.xyz !")
-            .catch(() => {});
+        message.author.send("> Can't Wait to Message to your friends? Download Escargot @ https://escargot.log1p.xyz !")
         return message.channel.send("Check your DM's.");
     }
 
@@ -42,7 +41,7 @@ client.on("message", message => {
         const contact = contacts[args.join(" ").toLowerCase()];
         if (!contact) {
             message.delete().catch(console.error);
-            return message.channel.send({embed: contacts.embed});
+            return message.channel.send("> We are currently experincing issues with this command. For Now it has been disabled. Thanks for using the Escargot Manager Public Beta.");
         }
 
         return message.channel.send(">usage: /n> !contact <user>");
@@ -51,6 +50,11 @@ client.on("message", message => {
     if (command === "invite") {
         message.delete().catch(console.error);
         return message.author.send({ embed: Invite.embed }).catch(() => {});
+    }
+
+    if (command === "about") {
+        message.delete().catch(console.error);
+        return message.author.send({ embed: about.embed }).catch(() => {});
     }
 });
 
