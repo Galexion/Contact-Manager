@@ -49,21 +49,16 @@ client.on("message", message => {
 
     if (command === "contact") {
         const contact = contacts[args.join(" ").toLowerCase()];
-        if (!contact) {
+        if (command === "contact add"){
+            return message.channel.send({ embed: add.embed });
+        };
+
+        if (command === "contact tailserayt"){
+            return message.channel.send({ embed: contact.tailserayt.embed });
+        };
+
             message.delete().catch(console.error);
             return message.channel.send("> We are currently experincing issues with this command. For Now it has been disabled. Thanks for using the Escargot Manager Public Beta.");
-        }
-        
-        if (!contact tailserayt) {
-            message.delete().catch(console.error);
-            return messsage.channel.send({ embed: contact.TailsEraYT.embed });
-        }
-
-        if (!contact add) {
-            message.delete().catch(console.error);
-            return message.channel.send({ embed: add.embed });
-        }
-
     };
 
 
