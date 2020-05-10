@@ -69,7 +69,7 @@ client.on("message", message => {
         };
 
         if (command === "contact tailserayt"){
-            return message.channel.send({ embed: contact.tailserayt.embed });
+            return message.channel.send({ embed: contacts.tailserayt.embed });
         };
 
         return message.channel.send("> Usage: !contact <user>")
