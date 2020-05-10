@@ -2,7 +2,7 @@ Escargot Manager
 =============
 
 View & Contact People's MSNM / WLM Information!
-V. Beta 1
+V. Live Beta 4 Patch 1
 
 Commands
 --------
