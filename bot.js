@@ -77,7 +77,7 @@ client.on("message", message => {
 
     if (command === "list") {
          message.channel.send("Work In progress. This command might be removed in later betas / Releases.");
-         return message.channel.send({ embed: contact.list.page1.embed});
+         return message.channel.send({ embed: contacts.list.page1.embed});
     }
 
 });
