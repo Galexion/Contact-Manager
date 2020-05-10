@@ -6,6 +6,10 @@ const help = require("./events/help");
 const contacts = {
     TailsEraYT: require("./events/Contacts/TailsEraYT"),
     Naidru: require("./events/Contacts/naidru"),
+    sprtcrnbry: require("./events/Contacts/sprtcrnbry"),
+    list: {
+        page1: require("./events/Contacts/List/page1"),
+    }
 };
 const Invite = require("./events/invite");
 const prefix = "!";
@@ -59,6 +63,7 @@ client.on("message", message => {
     if (command === "contact") {
         const contact = contacts[args.join(" ").toLowerCase()];
 
+
         if (command === "contact add"){
             return message.channel.send({ embed: add.embed });
         };
@@ -67,10 +72,13 @@ client.on("message", message => {
             return message.channel.send({ embed: contact.tailserayt.embed });
         };
 
-            message.delete().catch(console.error);
-            return message.channel.send("> We are currently experincing issues with this command. For now you can Access your and other Stats without 'contact' in the name.");
+        return message.channel.send("> Usage: !contact <user>")
     };
 
+    if (command === "list") {
+         message.channel.send("Work In progress. This command might be removed in later betas / Releases.");
+         return message.channel.send({ embed: contact.list.page1.embed});
+    }
 
 });
 

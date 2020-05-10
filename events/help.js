@@ -33,6 +33,10 @@ const embed = {
     {
       "name": "!invite",
       "value": "Sends you an invite Link so you can Invite the bot to your server. (Not Enabled at this time.)"
+    },
+    {
+      "name": "!list",
+      "value": "Lists all of the current users on the service Contact list."
     }
   ]
 };
