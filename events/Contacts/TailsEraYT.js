@@ -16,7 +16,7 @@ const embed = {
     },
     {
       "name": "Description",
-      "value": "I'm Tails Era! /n I'm Currently working on Making the Escorgot Manager Live Beta. /n Welcome to beta 1, and if you need to, Feel Free to contact me at any time."
+      "value": "I'm Tails Era! \n I'm Currently working on Making the Escorgot Manager Live Beta. \n Welcome to beta 1, and if you need to, Feel Free to contact me at any time."
     }
   ]
 };

@@ -20,7 +20,7 @@ const embed = {
     },
     {
       "name": "!contact",
-      "value": "This Command is currently not in use due to instability issues. Rest assured that our team is working 24/7 to bring this command back online. in the meanwile, you can type in the name of the person that you are looking for."
+      "value": "This Command is currently not in use due to instability issues. \n Rest assured that our team is working 24/7 to bring this command back online. in the meanwile, you can type in the name of the person that you are looking for."
     },
     {
       "name": "!add",

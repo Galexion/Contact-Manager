@@ -16,7 +16,7 @@ const embed = {
     },
     {
       "name": "Other Contact Places",
-      "value": " Discord: Naidru#3580 /n Custom Steam ID: Naidru /n Twitter: @EpicSkullYT"
+      "value": " Discord: Naidru#3580 \n Custom Steam ID: Naidru \n Twitter: @EpicSkullYT"
     }
   ]
 };
