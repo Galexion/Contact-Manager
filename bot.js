@@ -32,7 +32,7 @@ client.on("message", message => {
         return message.channel.send({ embed: contacts.TailsEraYT.embed }).catch(console.error);
     }
     
-    if (command === naidru) {
+    if (command === "naidru") {
         return message.channel.send({ embed: contacts.Naidru.embed });
     }
 
