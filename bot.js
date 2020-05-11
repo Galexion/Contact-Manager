@@ -39,6 +39,10 @@ client.on("message", message => {
     if (command === "naidru") {
         return message.channel.send({ embed: contacts.Naidru.embed });
     }
+    
+     if (command === "sprtcrnbry") {
+        return message.channel.send({ embed: contacts.sprtcrnbry.embed });
+    }
 
     //Commands Code
     if (command === "website") {
