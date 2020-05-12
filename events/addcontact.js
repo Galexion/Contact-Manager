@@ -11,6 +11,10 @@ const embed = {
       "value": "========"
     },
     {
+      "name": "Attention:",
+      "value": "I am Currently not accepting any Invites for this bot ATM due to software running on my computer that I need to run for about a Week.\nThis means that I currently Cannot accept applications at this time.\nI apologise for any inconvinance caused.\nETA: 7 days (May 12 to May 19.)"
+    },
+    {
       "name": "Adding Though DM's",
       "value": "Adding though DM's is Simple. all you need is the WLM / MSNM CLient. do !website for information."
     },
