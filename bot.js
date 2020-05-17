@@ -59,25 +59,41 @@ client.on("message", message => {
         message.delete().catch(console.error);
         return message.author.send({ embed: about.embed }).catch(() => {});
     }
-    if (command === "add"){
-        message.delete().catch(console.error);
-        return message.channel.send({ embed: add.embed });
-    }
 
     if (command === "contact") {
-        const contact = contacts[args.join(" ").toLowerCase()];
-
-
-        if (args[0] === "add"){
-            return message.channel.send({ embed: add.embed });
-        };
-
-        if (args[0] === "tailserayt"){
+        if (args.length < 1) return message.channel.send("> Usage:\nem!contact <contact/list> <list page #>");
+        
+        switch (args[0]) {
+            //contacts first
+            case "TailsEraYT":
             return message.channel.send({ embed: contacts.tailserayt.embed });
-        };
-
-        return message.channel.send("> Usage: !contact <user>")
-    };
+            break;
+            case "naidru":
+                return message.channel.send({ embed: contacts.Naidru.embed });
+            case "sprtcrnbry":
+                return message.channel.send({ embed: contacts.sprtcrnbry.embed });
+            case "add":
+                message.channel.send({ embed: contacts.list.page1.embed });
+                break;
+          case "list":
+            if (args.length > 1) {
+              switch (args[1]) {
+                case "1":
+                  return message.channel.send({ embed: list.page1.embed });
+                  break;
+                default:
+                  //deal with cases where a page that doesnt exist is given
+                  break;
+              }
+            } else {
+              return message.channel.send("> No Page was selected.");
+            }
+            break;
+          default:
+            return message.channel.send("> Unknown command/user.");
+            break;
+        }
+      }
 
     if (command === "list") {
          message.channel.send("Work In progress. This command might be removed in later betas / Releases.");
