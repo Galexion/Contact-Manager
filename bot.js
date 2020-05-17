@@ -68,11 +68,11 @@ client.on("message", message => {
         const contact = contacts[args.join(" ").toLowerCase()];
 
 
-        if (command === "contact add"){
+        if (args[0] === "add"){
             return message.channel.send({ embed: add.embed });
         };
 
-        if (command === "contact tailserayt"){
+        if (args[0] === "tailserayt"){
             return message.channel.send({ embed: contacts.tailserayt.embed });
         };
 
