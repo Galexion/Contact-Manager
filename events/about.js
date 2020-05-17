@@ -12,7 +12,7 @@ const embed = {
     },
     {
       "name": "Current Version",
-      "value": "Escagot Manager Live Beta 4 Patch 2"
+      "value": "Escagot Manager Live Beta 4 Patch 3"
     },
     {
         "name": "Credits",

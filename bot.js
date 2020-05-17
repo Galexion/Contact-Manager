@@ -7,6 +7,7 @@ const contacts = {
     TailsEraYT: require("./events/Contacts/TailsEraYT"),
     Naidru: require("./events/Contacts/naidru"),
     sprtcrnbry: require("./events/Contacts/sprtcrnbry"),
+    warlordoverdriv: require("./events/Contacts/warlordoverdriv"),
     list: {
         page1: require("./events/Contacts/List/page1"),
     }
@@ -33,15 +34,22 @@ client.on("message", message => {
     }
 
     if (command === "tailserayt") {
+        message.channel.send("> This Command will be gone by 5/25/20. do !findout to find out more.")
         return message.channel.send({ embed: contacts.TailsEraYT.embed }).catch(console.error);
     }
     
     if (command === "naidru") {
+        message.channel.send("> This Command will be gone by 5/25/20. do !findout to find out more.")
         return message.channel.send({ embed: contacts.Naidru.embed });
     }
     
      if (command === "sprtcrnbry") {
+         message.channel.send("> This Command will be gone by 5/25/20. do !findout to find out more.")
         return message.channel.send({ embed: contacts.sprtcrnbry.embed });
+    }
+
+    if (command === "add") {
+        return message.channel.send({ embed: add.embed });
     }
 
     //Commands Code
@@ -61,26 +69,25 @@ client.on("message", message => {
     }
 
     if (command === "contact") {
-        if (args.length < 1) return message.channel.send("> Usage:\nem!contact <contact/list> <list page #>");
+        if (args.length < 1) return message.channel.send("> Usage:\n> !contact <contact/list> <list page #>");
         
         switch (args[0]) {
             //contacts first
             case "TailsEraYT":
             return message.channel.send({ embed: contacts.TailsEraYT.embed });
-            break;
             case "naidru":
                 return message.channel.send({ embed: contacts.Naidru.embed });
             case "sprtcrnbry":
                 return message.channel.send({ embed: contacts.sprtcrnbry.embed });
+            case "warlordoverdriv":
+                return message.channel.send({ embed: contacts.warlordoverdriv.embed });
             case "add":
-                message.channel.send({ embed: contacts.list.page1.embed });
-                break;
+                return message.channel.send({ embed: add.embed });
           case "list":
             if (args.length > 1) {
               switch (args[1]) {
                 case "1":
                   return message.channel.send({ embed: list.page1.embed });
-                  break;
                 default:
                   //deal with cases where a page that doesnt exist is given
                   break;
@@ -91,12 +98,11 @@ client.on("message", message => {
             break;
           default:
             return message.channel.send("> Unknown command/user.");
-            break;
         }
       }
 
     if (command === "list") {
-         message.channel.send("Work In progress. This command might be removed in later betas / Releases.");
+         message.channel.send("This Command is Merging with the !contact command in 5/25/20. do !findout to find out more.");
          return message.channel.send({ embed: contacts.list.page1.embed});
     }
 

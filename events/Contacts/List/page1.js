@@ -12,15 +12,19 @@ const embed = {
     },
     {
       "name": "Tails Era",
-      "value": "I'm Tails Era. lets Chat Sometime! ( !TailsEra )"
+      "value": "I'm Tails Era. lets Chat Sometime!"
     },
     {
         "name": "Naidru",
-        "value": "No Description ( !Naidu )"
+        "value": "No Description."
     },
     {
         "name": "Sprtcrnbry",
-        "value": "Hi there, I'm Sprtcrnbry. Feel free to add my MSN on any of my emails. ( !sprtcrnbry )"
+        "value": "Hi there, I'm Sprtcrnbry. Feel free to add my MSN on any of my emails."
+    },
+    {
+      "name": "WarlordOverDriv",
+      "value": "I work for HP. I play a ton of Xbox and PC in my spare time."
     }
   ]
 };

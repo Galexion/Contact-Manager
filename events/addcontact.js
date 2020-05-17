@@ -11,6 +11,10 @@ const embed = {
       "value": "========"
     },
     {
+      "name": "ATTN:",
+      "value": "This method of adding people will be cone in a few days. Do !findout to find out more."
+    },
+    {
       "name": "Adding Though DM's",
       "value": "Adding though DM's is Simple. all you need is the WLM / MSNM CLient. do !website for information."
     },
