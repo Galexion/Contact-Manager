@@ -66,7 +66,7 @@ client.on("message", message => {
         switch (args[0]) {
             //contacts first
             case "TailsEraYT":
-            return message.channel.send({ embed: contacts.tailserayt.embed });
+            return message.channel.send({ embed: contacts.TailsEraYT.embed });
             break;
             case "naidru":
                 return message.channel.send({ embed: contacts.Naidru.embed });
