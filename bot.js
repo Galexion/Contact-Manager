@@ -16,6 +16,7 @@ const Invite = require("./events/invite");
 const prefix = "!";
 const add = require("./events/addcontact");
 const about = require("./events/about");
+const findout = require("./events/findout");
 
 client.on("ready", () => {
     console.log("Escargot Manager Has Been Launched.");
@@ -50,6 +51,10 @@ client.on("message", message => {
 
     if (command === "add") {
         return message.channel.send({ embed: add.embed });
+    }
+
+    if (command === "findout") {
+        return message.channel.send({ embed: findout.embed });
     }
 
     //Commands Code
