@@ -11,12 +11,12 @@ const embed = {
       "value": "========"
     },
     {
-      "name": "Current Version",
-      "value": "Escagot Manager Live Beta 4 Patch 3"
+      "name": "This is a Open Source Prodect!",
+      "value": "This Bot's soruce Code was made originally by EraMedia."
     },
     {
         "name": "Credits",
-        "value": "The Escagot Manager Project was Made by: TailsEraYT, Walkingphasers"
+        "value": "The Original Sorce Code Base Was: TailsEraYT, Walkingphasers"
     }
   ]
 };
